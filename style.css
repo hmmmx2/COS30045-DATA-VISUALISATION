@@ -270,20 +270,287 @@ body {
     color: var(--white);
 }
 
+/* Chart Selection Section */
+.chart-selection {
+    background: var(--primary-orange);
+    margin-top: 10vh;
+    padding: 20px 0;
+    position: relative;
+    z-index: 10;
+}
+
+.tab {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    background-color: transparent;
+    border: none;
+    overflow: visible;
+}
+
+/* Tab Content */
+.tab button {
+    background: var(--primary-orange);
+    float: none;
+    border: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+    padding: 20px;
+    transition: all 0.2s ease;
+    border-radius: var(--border-radius-large);
+    min-width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--dark-orange);
+}
+
+/* Icon styling */
+.tab button .chart-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    background: var(--white);
+    border-radius: var(--border-radius-large);
+    padding: 12px;
+}
+
+.tab button .icon-img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background: var(--light-orange);
+    opacity: 0.9;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background: var(--light-orange);
+    border-color: var(--dark-orange);
+    font-weight: 600;
+}
+
+.tab button.active .chart-icon {
+    background: var(--primary-orange);
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 40px 20px;
+    background: white;
+    border: none;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    animation: fadeIn 0.3s ease;
+}
+
+.tabcontent h3 {
+    color: var(--dark-orange);
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.chart-placeholder {
+    width: 100%;
+    height: 400px;
+    background: var(--light-orange);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    font-size: 1.5rem;
+    color: var(--dark-orange);
+    border: 2px solid var(--primary-orange);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.tabcontent p {
+    color: #666;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 20px auto;
+    background: var(--light-orange);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* About Us Section */
+.about-us {
+    padding: 80px 0 60px;
+    background: var(--white);
+    display: flex;
+    align-items: center;
+}
+
+.about-us-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.about-us-img {
+    border-radius: var(--border-radius-large);
+    background: var(--light-orange);
+    overflow: hidden;
+}
+
+
+.company-img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.company-content {
+    padding: 20px 0;
+}
+
+.company-content h2 {
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    color: var(--dark-orange);
+    margin-bottom: 30px;
+    text-align: left;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.company-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--dark-orange);
+    text-align: justify;
+    margin: 0;
+}
+
+/* Mission Section */
+.mission {
+    padding: 60px 0 80px;
+    display: flex;
+    align-items: center;
+}
+
+.mission-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.mission-img {
+    border-radius: var(--border-radius-large);
+    background: var(--white);
+    overflow: hidden;
+    order: 2;
+}
+
+.office-img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.mission-content {
+    padding: 20px 0;
+    order: 1;
+}
+
+.mission-content h2 {
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    color: var(--dark-orange);
+    margin-bottom: 30px;
+    text-align: left;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.mission-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #666;
+    text-align: justify;
+    margin: 0;
+}
 
 /* Footer */
+
+.vl {
+    border-bottom: 0.5px solid var(--white);
+    width: 100%;
+    height: 0;
+}
+
 .footer {
     background: var(--primary-orange);
     color: var(--white);
+    padding: 40px 0;
+    margin-top: auto;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
     text-align: center;
-    padding: 25px 0;
+}
+
+.footer-reference h3 {
+    color: var(--white);
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.footer-reference a {
+    color: var(--white);
+    text-decoration: underline;
+    font-size: 0.9rem;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
+.footer-reference a:hover {
+    opacity: 1;
+    text-decoration: none;
 }
 
 .footer-text {
     font-size: 14px;
     opacity: 0.9;
     font-weight: 400;
+    margin: 0;
 }
+
 
 /* ============ RESPONSIVE DESIGN ============ */
 
@@ -311,6 +578,11 @@ body {
         padding: 40px;
         gap: 30px;
     }
+
+    .chart-selection {
+        margin-top: 15vh;
+        padding: 20px 0;
+    }
     
     .hero-title {
         font-size: 3.5rem;
@@ -318,6 +590,19 @@ body {
     
     .hero-subtitle {
         font-size: 1.2rem;
+    }
+
+        .about-us, .mission {
+        padding: 60px 0 40px;
+    }
+    
+    .about-us-container, .mission-container {
+        gap: 40px;
+        padding: 0 15px;
+    }
+    
+    .company-img, .office-img {
+        height: 300px;
     }
 }
 
@@ -389,6 +674,89 @@ body {
     
     .data-story-title {
         text-align: center;
+    }
+
+    .chart-selection {
+        margin-top: 25vh;
+    }
+
+    .tab {
+        gap: 25px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .tab button {
+        min-width: 80px;
+        padding: 15px;
+    }
+    
+    .tab button .chart-icon {
+        width: 45px;
+        height: 45px;
+        padding: 10px;
+    }
+    
+    .tab button .icon-img {
+        width: 22px;
+        height: 22px;
+    }
+    
+    .tabcontent h3 {
+        font-size: 2rem;
+    }
+    
+    .chart-placeholder {
+        height: 300px;
+        font-size: 1.2rem;
+    }
+
+        .about-us {
+        min-height: auto;
+        padding: 100px 0 40px;
+    }
+    
+    .mission {
+        padding: 40px 0 60px;
+    }
+    
+    .about-us-container, .mission-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+    }
+    
+    .mission-img, .mission-content {
+        order: unset;
+    }
+    
+    .company-content h2, .mission-content h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .company-content p, .mission-content p {
+        text-align: center;
+        font-size: 1rem;
+    }
+    
+    .company-img, .office-img {
+        height: 250px;
+    }
+    
+    .about-us-img, .mission-img {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        text-align: left;
+    }
+    
+    .footer-copyright {
+        text-align: right;
     }
 }
 
@@ -485,6 +853,36 @@ body {
         padding: 10px 16px;
         font-size: 14px;
     }
+
+    .chart-selection {
+        margin-top: 25vh;
+        padding: 20px 0;
+    }
+    
+    .tab {
+        gap: 20px;
+    }
+    
+    .tab button {
+        min-width: 70px;
+        padding: 12px;
+        font-size: 12px;
+    }
+    
+    .tab button .chart-icon {
+        width: 40px;
+        height: 40px;
+        padding: 8px;
+    }
+    
+    .tab button .icon-img {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .tabcontent {
+        padding: 20px 10px;
+    }
     
     .footer {
         padding: 20px 0;
@@ -493,6 +891,35 @@ body {
     .footer-text {
         font-size: 12px;
         padding: 0 10px;
+    }
+
+        .about-us {
+        padding: 120px 0 30px;
+    }
+    
+    .mission {
+        padding: 30px 0 40px;
+    }
+    
+    .about-us-container, .mission-container {
+        padding: 0 10px;
+        gap: 25px;
+    }
+    
+    .company-content, .mission-content {
+        padding: 15px 0;
+    }
+    
+    .company-content h2, .mission-content h2 {
+        margin-bottom: 15px;
+    }
+    
+    .company-img, .office-img {
+        height: 200px;
+    }
+    
+    .about-us-img, .mission-img {
+        max-width: 300px;
     }
 }
 
