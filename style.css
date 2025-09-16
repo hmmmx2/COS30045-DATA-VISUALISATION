@@ -748,6 +748,7 @@ body {
         max-width: 400px;
         margin: 0 auto;
     }
+<<<<<<< HEAD
 
     .footer-content {
         grid-template-columns: 1fr 1fr;
@@ -758,6 +759,8 @@ body {
     .footer-copyright {
         text-align: right;
     }
+=======
+>>>>>>> 649be254d2b456c4d2c158a592bc99ac908cc0a2
 }
 
 /* Mobile Devices */
