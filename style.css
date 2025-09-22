@@ -236,7 +236,6 @@ body {
     margin-bottom: 10px;
     letter-spacing: -1px;
     padding-bottom: 2vh;
-    grid-column: 1 / -1;
 }
 
 .chart-sample-img {
