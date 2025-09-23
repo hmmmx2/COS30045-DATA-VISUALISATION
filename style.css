@@ -89,8 +89,7 @@ body {
     background: var(--primary-orange);
     border-radius: var(--border-radius-small);
     padding: 8px;
-    box-shadow: 0 4px 15px rgba(212, 149, 63, 0.2);
-    border: 1.5px solid var(--dark-orange);
+    border: 1.8px solid var(--dark-orange);
 }
 
 .nav-link {
@@ -566,7 +565,7 @@ body {
 .mission-content p {
     font-size: 1.1rem;
     line-height: 1.8;
-    color: #666;
+    color: var(--dark-orange);
     text-align: justify;
     margin: 0;
 }
