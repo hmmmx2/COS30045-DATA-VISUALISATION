@@ -25,27 +25,59 @@
         </div>
     </header>
 
-    <!-- Introduction Section -->
-    <section id="Introduction" class="introductiondisplay">
-        <div class="introduction-content">
-            <div class="introduction-adjustment">
-            <h3>Title:</h3>
-            <p>Content</p>
+    <!-- Chart Selection Tab  -->
+    <div id="chart-selection" class="chart-selection">
+        <div class="container">
+            <div class="tab">
+                 <button class="tablinks active" onclick="openCity(event, 'Graph')">
+                    <img src="/images/Graph-Icon.svg" alt="Graph Icon" class="icon-img">
+                    Graph
+                </button>
+
+                <button class="tablinks" onclick="openCity(event, 'BarChart')">
+                    <img src="/images/Bar-Chart-Icon.svg" alt="Bar Chart Icon" class="icon-img">
+                    Bar Chart
+                </button>
+
+                <button class="tablinks" onclick="openCity(event, 'PieChart')">
+                    <img src="/images/Pie-Chart-Icon.svg" alt="Pie Chart Icon" class="icon-img">
+                    Pie Chart
+                </button>
             </div>
         </div>
-    </section>
+    </div>
 
-
-    <!-- Chart Display Content Section -->
-    <section id="Q1_Chart" class="chartdisplay">
-        <div class="chart-question">
-            <h3>Question</h3>      
-        </div>
+    <!-- Tab Content Section -->
+    <section id="Graph" class="tabcontent" style="display: block;">
+        <h3>Line Graph</h3>
         <div class="chart-placeholder">
-            <h3>Chart</h3>
+            Line Graph
         </div>
-        <p><strong>Ans:</strong> Answer</p>
+        <p><strong>Line Graph</strong> Hmmmmm</p>
     </section>
+
+
+
+    <section id="BarChart" class="tabcontent">
+        <h3>Bar Chart</h3>
+        <div class="chart-placeholder">
+            Bar Chart
+        </div>
+        <p><strong>Bar Chart</strong> Hmmmmm</p>
+    </section>
+
+
+
+
+
+    <section id="PieChart" class="tabcontent">
+        <h3>Pie Chart</h3>
+        <div class="chart-placeholder">
+            Pie Chart
+        </div>
+        <p><strong>Pie Chart</strong> Hmmmmm</p>
+    </section>
+
 
 
     <!-- Footer -->
@@ -77,6 +109,6 @@
 
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="main.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
