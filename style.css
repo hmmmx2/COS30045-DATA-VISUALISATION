@@ -89,8 +89,7 @@ body {
     background: var(--primary-orange);
     border-radius: var(--border-radius-small);
     padding: 8px;
-    box-shadow: 0 4px 15px rgba(212, 149, 63, 0.2);
-    border: 1.5px solid var(--dark-orange);
+    border: 1.8px solid var(--dark-orange);
 }
 
 .nav-link {
@@ -151,17 +150,6 @@ body {
     overflow: hidden;
 }
 
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: radial-gradient(circle at 30% 70%, rgba(255, 255, 255, 0.3) 0%, transparent 50%),
-                radial-gradient(circle at 70% 30%, rgba(255, 255, 255, 0.2) 0%, transparent 50%);
-    pointer-events: none;
-}
 
 .hero-content {
     position: relative;
@@ -285,7 +273,9 @@ body {
     color: var(--white);
 }
 
+
 /* Chart Selection Section */
+
 .chart-selection {
     background: var(--primary-orange);
     margin-top: 10vh;
@@ -293,6 +283,8 @@ body {
     position: relative;
     z-index: 10;
 }
+
+
 
 .tab {
     display: flex;
@@ -303,7 +295,10 @@ body {
     overflow: visible;
 }
 
+
+
 /* Tab Content */
+
 .tab button {
     background: var(--primary-orange);
     float: none;
@@ -322,7 +317,10 @@ body {
     color: var(--dark-orange);
 }
 
+
+
 /* Icon styling */
+
 .tab button .chart-icon {
     width: 40px;
     height: 40px;
@@ -335,31 +333,49 @@ body {
     padding: 12px;
 }
 
+
+
 .tab button .icon-img {
     width: 36px;
     height: 36px;
     object-fit: contain;
 }
 
+
+
 /* Change background color of buttons on hover */
+
 .tab button:hover {
     background: var(--light-orange);
     opacity: 0.9;
 }
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> cfb4a106370c8ed83fb2f0504c7a7a5d8349f513
 /* Create an active/current tablink class */
+
 .tab button.active {
     background: var(--light-orange);
     border-color: var(--dark-orange);
     font-weight: 600;
 }
 
+
+
 .tab button.active .chart-icon {
     background: var(--primary-orange);
 }
 
+
+
 /* Style the tab content */
+<<<<<<< HEAD
+=======
+
+>>>>>>> cfb4a106370c8ed83fb2f0504c7a7a5d8349f513
 .tabcontent {
     display: none;
     padding: 40px 20px;
@@ -378,6 +394,11 @@ body {
     font-weight: 600;
 }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> cfb4a106370c8ed83fb2f0504c7a7a5d8349f513
 .chart-placeholder {
     width: 100%;
     height: 400px;
@@ -393,6 +414,11 @@ body {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> cfb4a106370c8ed83fb2f0504c7a7a5d8349f513
 .tabcontent p {
     color: #666;
     line-height: 1.8;
@@ -513,7 +539,7 @@ body {
 .mission-content p {
     font-size: 1.1rem;
     line-height: 1.8;
-    color: #666;
+    color: var(--dark-orange);
     text-align: justify;
     margin: 0;
 }
