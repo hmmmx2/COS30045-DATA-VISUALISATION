@@ -347,6 +347,7 @@ body {
     opacity: 0.9;
 }
 
+
 /* Create an active/current tablink class */
 .tab button.active {
     background: var(--light-orange);
@@ -359,85 +360,28 @@ body {
 }
 
 /* Style the tab content */
-
-.introductiondisplay {
-    padding-top: 40px;
+.tabcontent {
+    display: none;
+    padding: 40px 20px;
     background: white;
     border: none;
     max-width: 1200px;
-    margin: 20px auto;
+    margin: 0 auto;
     text-align: center;
-    display: block;
+    animation: fadeIn 0.3s ease;
 }
 
-.introductiondisplay h3 {
+.tabcontent h3 {
     color: var(--dark-orange);
-    font-size: 1.3rem;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
     font-weight: 600;
-}
-
-.introductiondisplay p {
-    color: var(--dark-orange);
-    font-size: 1rem;
-    font-weight: 600;
-}
-
-.introduction-adjustment{
-    margin: 0px 30px ;
-}
-
-.introduction-content{
-    width: 100%;
-    height: 160px;
-    background: var(--light-orange);
-    border-radius: 15px;
-    align-items: center;
-    grid-template-rows: auto;
-    display: grid;
-    text-align: justify;
-    margin: 20px auto;
-    font-size: 1.5rem;
-    color: var(--dark-orange);
-    border: 2px solid var(--primary-orange);
-    border-style: dashed;
-}
-
-
-.chartdisplay {
-    padding-top: 40px;
-    background: white;
-    border: none;
-    max-width: 1200px;
-    margin: 20px auto;
-    text-align: center;
-    display: block;
-}
-
-.chartdisplay h3 {
-    color: var(--dark-orange);
-    font-size: 1.3rem;
-    font-weight: 600;
-}
-
-
-.chart-question {
-    width: 100%;
-    height: 100px;
-    background: var(--white);
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px 0;
-    font-size: 1.5rem;
-    color: var(--dark-orange);
-    border: 2px solid var(--primary-orange);
 }
 
 .chart-placeholder {
     width: 100%;
     height: 400px;
-    background: var(--white);
+    background: var(--light-orange);
     border-radius: 15px;
     display: flex;
     align-items: center;
@@ -446,18 +390,11 @@ body {
     font-size: 1.5rem;
     color: var(--dark-orange);
     border: 2px solid var(--primary-orange);
-    overflow: hidden;
-
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
-.chart-placeholder img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.chartdisplay p {
-    color: var(--dark-orange);
+.tabcontent p {
+    color: #666;
     line-height: 1.8;
     font-size: 1.1rem;
     max-width: 800px;
@@ -465,7 +402,6 @@ body {
     background: var(--light-orange);
     padding: 20px;
     border-radius: 10px;
-    border: 2px solid var(--primary-orange);
 }
 
 @keyframes fadeIn {
