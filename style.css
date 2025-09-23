@@ -273,9 +273,7 @@ body {
     color: var(--white);
 }
 
-
 /* Chart Selection Section */
-
 .chart-selection {
     background: var(--primary-orange);
     margin-top: 10vh;
@@ -283,8 +281,6 @@ body {
     position: relative;
     z-index: 10;
 }
-
-
 
 .tab {
     display: flex;
