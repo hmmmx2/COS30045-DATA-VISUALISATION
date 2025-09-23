@@ -351,10 +351,6 @@ body {
 }
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> cfb4a106370c8ed83fb2f0504c7a7a5d8349f513
 /* Create an active/current tablink class */
 
 .tab button.active {
@@ -372,10 +368,6 @@ body {
 
 
 /* Style the tab content */
-<<<<<<< HEAD
-=======
-
->>>>>>> cfb4a106370c8ed83fb2f0504c7a7a5d8349f513
 .tabcontent {
     display: none;
     padding: 40px 20px;
@@ -394,11 +386,6 @@ body {
     font-weight: 600;
 }
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> cfb4a106370c8ed83fb2f0504c7a7a5d8349f513
 .chart-placeholder {
     width: 100%;
     height: 400px;
@@ -414,11 +401,6 @@ body {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> cfb4a106370c8ed83fb2f0504c7a7a5d8349f513
 .tabcontent p {
     color: #666;
     line-height: 1.8;

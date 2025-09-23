@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 document.addEventListener('DOMContentLoaded', function() {
     setActivePage();
 });
@@ -24,9 +23,6 @@ function setActivePage() {
     }
 }
 
-=======
- 
->>>>>>> cfb4a106370c8ed83fb2f0504c7a7a5d8349f513
 function openCity(evt, cityName) {
     var i, tabcontent, tablinks;
 
